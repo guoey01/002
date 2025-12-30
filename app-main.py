@@ -27,7 +27,7 @@ left_column.write("")
 dirs = os.getcwd()
 
 # 在右侧列中显示图像
-right_column.image('./logo.png', caption='', width=100)
+right_column.image('./hospital.png', caption='', width=100)
 
 # 创建一个侧边栏
 st.sidebar.header('输入参数')
