@@ -30,7 +30,7 @@ dirs = os.getcwd()
 right_column.image('./hospital.png', caption='', width=100)
 
 # 创建一个侧边栏
-st.sidebar.header('输入参数')
+st.sidebar.header('Input parameters')
 
 # Input bar 1
 a = st.sidebar.number_input(vars[0]+"(0-No,1-Yes)" ,min_value=0 ,max_value=1,value=0)
@@ -70,7 +70,7 @@ if st.sidebar.button("Submit"):
 
 
     # Output prediction
-    st.text(f"The probability of GradientBoost is: {str(result_prob_pos)}%")
+    st.text(f"The probability of LightGBM is: {str(result_prob_pos)}%")
 
 
     # 创建一个新的DataFrame来存储用户输入的数据
