@@ -27,10 +27,10 @@ left_column.write("")
 dirs = os.getcwd()
 
 # 在右侧列中显示图像
-right_column.image('./logo2.png', caption='', width=100)
+right_column.image('./hospital.png', caption='', width=100)
 
 # 创建一个侧边栏
-st.sidebar.header('Input parameters')
+st.sidebar.header('输入参数')
 
 # Input bar 1
 a = st.sidebar.number_input(vars[0]+"(0-No,1-Yes)" ,min_value=0 ,max_value=1,value=0)
